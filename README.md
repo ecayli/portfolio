@@ -1,16 +1,32 @@
 # Elifnaz Çaylı — Portfolio
 
-A single-page portfolio site showcasing UI/UX and media production work: *3 Days Later* (short film), *SynchroTrack*, *Yummy*, and a Save-button component system.
+UI/UX and media production portfolio: interface prototypes, a component/design-system exercise, and an end-to-end short film production.
 
-**Live site:** _add your GitHub Pages URL here once deployed_
+**Live site:** https://github.com/ecayli/portfolio
 
 ---
 
-## Folder structure
+## About this project
+
+A single-page portfolio built around a simple idea: the throughline across writing, editing, sound, and interface design is *timing*. Every project is logged with a timecode instead of a plain number, and a waveform motif runs through the page as a visual signature — tying film editing, audio work, and UI prototyping together instead of treating them as separate skills.
+
+**Featured work:**
+- **3 Days Later** — a short thriller produced end-to-end with a 5-person team: writing, cast, editing, sound, and the full visual identity (posters, promo site, TikTok teaser)
+- **SynchroTrack** — a mood-based "sonic focus" app concept, designed in Figma
+- **Yummy** — an onboarding/auth flow exploring warmth and tone in a food app
+- **Save Button** — a component states exercise (default, hover, pressed, saved) built with design-system consistency in mind
+
+## Built with
+
+- Plain HTML, CSS, and JavaScript — no framework, no build step
+- Fonts: [Fraunces](https://fonts.google.com/specimen/Fraunces), [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans), [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) via Google Fonts
+- Images embedded as base64 directly in the HTML; video clips served from `/videos`
+
+## Structure
 
 ```
 .
-├── index.html          ← the whole site (HTML + CSS + JS in one file, images embedded)
+├── index.html          ← the entire site (markup, styles, and script in one file)
 └── videos/
     ├── intro.mp4
     ├── intro_poster.jpg
@@ -18,42 +34,25 @@ A single-page portfolio site showcasing UI/UX and media production work: *3 Days
     └── teaser_poster.jpg
 ```
 
-`index.html` is self-contained except for the `videos/` folder — the two never separate. If you move or rename the videos folder, update the `src="videos/..."` paths in `index.html` (search for `<source src=`).
+`index.html` and `videos/` travel together — the video `<source>` tags reference relative paths inside that folder.
 
----
+## Running it locally
 
-## Deploy with GitHub Pages (recommended)
+No build step required — clone the repo and open `index.html` in a browser, or serve the folder with any static server:
 
-1. Create a new repo on GitHub, e.g. `portfolio` (github.com/ecayli/portfolio).
-2. Upload this whole folder — `index.html` and `videos/` together, keeping the structure intact. Easiest way:
-   ```bash
-   git init
-   git add .
-   git commit -m "Portfolio site"
-   git branch -M main
-   git remote add origin https://github.com/ecayli/portfolio.git
-   git push -u origin main
-   ```
-3. On GitHub: **Settings → Pages → Source → Deploy from branch → `main` / `root`** → Save.
-4. After a minute or two, your site is live at:
-   ```
-   https://ecayli.github.io/portfolio/
-   ```
-5. Send me that exact URL — I'll update the CV and the outreach message to match it (they currently use a placeholder link).
+```bash
+git clone https://github.com/ecayli/portfolio.git
+cd portfolio
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
 
-### Updating content later
-Edit `index.html` directly (text, links, project order) and `git push` again — GitHub Pages redeploys automatically within a minute. To swap a screenshot or video, replace the corresponding file and re-embed/re-link as needed — ask me and I'll regenerate the file for you.
+## Deployment
 
----
+Hosted as a static site via **GitHub Pages** (`Settings → Pages → Deploy from branch → main / root`). Any static host works equally well — Netlify, Vercel, or Cloudflare Pages all serve this folder as-is.
 
-## Alternative: Netlify Drop
+## Contact
 
-If you don't want to touch git: go to [app.netlify.com/drop](https://app.netlify.com/drop) and drag the whole folder (`index.html` + `videos/`) onto the page. You get an instant live URL, no account required for a first deploy (create a free account to keep it permanently and get a custom subdomain like `elifnazcayli.netlify.app`).
-
----
-
-## Notes
-
-- The site uses Google Fonts (Fraunces, IBM Plex Sans, IBM Plex Mono) loaded via CDN — needs an internet connection to render correctly; falls back to system fonts offline.
-- All screenshots and the film poster are base64-embedded directly in `index.html`, so only the two video files are separate assets.
-- Contact links in the footer point to `elifnazcayli@gmail.com`, LinkedIn, and GitHub — update these in `index.html` if they change.
+- Email: [elifnazcayli@gmail.com](mailto:elifnazcayli@gmail.com)
+- LinkedIn: [linkedin.com/in/elifnazayl](https://linkedin.com/in/elifnazayl/)
+- GitHub: [github.com/ecayli](https://github.com/ecayli)
