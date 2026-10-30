@@ -8,7 +8,7 @@ UI/UX and media production portfolio: interface prototypes, a component/design-s
 
 ## About this project
 
-A single-page portfolio built around a simple idea: the throughline across writing, editing, sound, and interface design is *timing*. Every project is logged with a timecode instead of a plain number, and a waveform motif runs through the page as a visual signature — tying film editing, audio work, and UI prototyping together instead of treating them as separate skills.
+A single-page portfolio with a soft pastel look: pill navigation, outlined cards, split tinted/grey sections and small doodle stickers. Projects are ordered newest first, starting with the CENTRA case study (UX3 Concept Development).
 
 **Featured work:**
 - **3 Days Later** — a short thriller produced end-to-end with a 5-person team: writing, cast, editing, sound, and the full visual identity (posters, promo site, TikTok teaser)
@@ -19,7 +19,7 @@ A single-page portfolio built around a simple idea: the throughline across writi
 ## Built with
 
 - Plain HTML, CSS, and JavaScript — no framework, no build step
-- Fonts: [Fraunces](https://fonts.google.com/specimen/Fraunces), [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans), [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) via Google Fonts
+- Font: [Instrument Sans](https://fonts.google.com/specimen/Instrument+Sans) via Google Fonts
 - Images embedded as base64 directly in the HTML; video clips served from `/videos`
 
 ## Structure
