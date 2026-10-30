@@ -39,6 +39,10 @@ a{color:inherit}
 
 /* hero */
 .hero{background:linear-gradient(var(--lav) 0 560px,var(--grey) 560px);margin-top:-76px;padding-top:76px}
+.skyline{position:absolute;left:0;right:0;top:250px;height:310px;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(#000 60%,transparent);mask-image:linear-gradient(#000 60%,transparent)}
+.skyline svg{width:100%;height:100%;fill:#1F4FA3;filter:blur(3px);opacity:.32}
+.skyline .sk-back{opacity:.55}
+.hero .wrap{position:relative;z-index:1}
 .hero__inner{position:relative;text-align:center;padding:84px 0 56px}
 .hero h1{font-size:clamp(40px,7vw,76px);line-height:1.02;letter-spacing:-.04em;font-weight:600;max-width:15ch;margin-inline:auto}
 .hero h1 em{font-style:italic;font-weight:500}
@@ -154,6 +158,7 @@ footer{background:var(--lav);padding:96px 0 40px;text-align:center}
 footer h2{font-size:clamp(34px,6vw,64px);letter-spacing:-.04em;font-weight:600;line-height:1.05}
 footer p{max-width:52ch;margin:16px auto 0;color:var(--ink-2)}
 .btn-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.nazar{display:block;margin:0 auto 18px}
 .end{margin-top:56px;font-size:12px;letter-spacing:.08em;color:var(--ink-2);font-weight:600}
 </style>
 </head>
@@ -176,11 +181,8 @@ footer p{max-width:52ch;margin:16px auto 0;color:var(--ink-2)}
 </nav>
 
 <header class="hero">
+  <div class="skyline" aria-hidden="true"><svg viewBox="0 0 1440 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false"><g class="sk-back"><rect x="0" y="205" width="70" height="55"/><rect x="70" y="190" width="60" height="70"/><rect x="130" y="215" width="80" height="45"/><rect x="330" y="200" width="60" height="60"/><rect x="390" y="185" width="70" height="75"/><rect x="460" y="210" width="80" height="50"/><rect x="760" y="205" width="70" height="55"/><rect x="830" y="190" width="80" height="70"/><rect x="910" y="210" width="60" height="50"/><rect x="1260" y="200" width="70" height="60"/><rect x="1330" y="185" width="60" height="75"/><rect x="1390" y="205" width="60" height="55"/></g><g class="sk-front"><path d="M153,175 A62,62 0 0 1 277,175 Z"/><rect x="213.5" y="99" width="3" height="14"/><circle cx="215" cy="99" r="3.5"/><rect x="150" y="175" width="130" height="85"/><path d="M114,200 A26,26 0 0 1 166,200 Z"/><rect x="138.5" y="166" width="3" height="8"/><circle cx="140" cy="166" r="3.5"/><path d="M264,200 A26,26 0 0 1 316,200 Z"/><rect x="288.5" y="166" width="3" height="8"/><circle cx="290" cy="166" r="3.5"/><rect x="114" y="102" width="8" height="158"/><rect x="109" y="132" width="18" height="5" rx="2"/><polygon points="112.5,102 118,70 123.5,102"/><rect x="308" y="102" width="8" height="158"/><rect x="303" y="132" width="18" height="5" rx="2"/><polygon points="306.5,102 312,70 317.5,102"/><rect x="92" y="137" width="8" height="123"/><rect x="87" y="167" width="18" height="5" rx="2"/><polygon points="90.5,137 96,105 101.5,137"/><rect x="330" y="137" width="8" height="123"/><rect x="325" y="167" width="18" height="5" rx="2"/><polygon points="328.5,137 334,105 339.5,137"/><rect x="590" y="130" width="40" height="130"/><rect x="584" y="118" width="52" height="14"/><rect x="590" y="96" width="40" height="22"/><polygon points="586,96 610,56 634,96"/><rect x="609" y="40" width="2" height="18"/><path d="M952,160 A88,88 0 0 1 1128,160 Z"/><rect x="1038.5" y="56" width="3" height="16"/><circle cx="1040" cy="56" r="3.5"/><rect x="930" y="160" width="220" height="100"/><path d="M894,190 A46,46 0 0 1 986,190 Z"/><rect x="938.5" y="136" width="3" height="8"/><circle cx="940" cy="136" r="3.5"/><path d="M1094,190 A46,46 0 0 1 1186,190 Z"/><rect x="1138.5" y="136" width="3" height="8"/><circle cx="1140" cy="136" r="3.5"/><path d="M1039.9,205 A0.1,0.1 0 0 1 1040.1,205 Z"/><rect x="1038.5" y="204.9" width="3" height="0"/><circle cx="1040" cy="204.9" r="3.5"/><rect x="896" y="92" width="8" height="168"/><rect x="891" y="122" width="18" height="5" rx="2"/><polygon points="894.5,92 900,60 905.5,92"/><rect x="1176" y="92" width="8" height="168"/><rect x="1171" y="122" width="18" height="5" rx="2"/><polygon points="1174.5,92 1180,60 1185.5,92"/><rect x="868" y="124" width="8" height="136"/><rect x="863" y="154" width="18" height="5" rx="2"/><polygon points="866.5,124 872,92 877.5,124"/><rect x="1204" y="124" width="8" height="136"/><rect x="1199" y="154" width="18" height="5" rx="2"/><polygon points="1202.5,124 1208,92 1213.5,124"/><path d="M1324,215 A36,36 0 0 1 1396,215 Z"/><rect x="1358.5" y="171" width="3" height="8"/><circle cx="1360" cy="171" r="3.5"/><rect x="1411" y="152" width="8" height="108"/><rect x="1406" y="182" width="18" height="5" rx="2"/><polygon points="1409.5,152 1415,120 1420.5,152"/></g><rect x="0" y="236" width="1440" height="24"/></svg></div>
   <div class="wrap hero__inner">
-    <span class="sticker sticker--a">Figma Prototyping</span>
-    <span class="sticker sticker--c">UX Research</span>
-    <span class="sticker sticker--b">Film &amp; Sound</span>
-    <svg class="doodle doodle--a" width="52" height="64" viewBox="0 0 52 64" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M26 62V34"/><path d="M26 52c-8 0-14-4-16-12 6 0 12 3 16 8M26 48c8 0 14-4 16-12-6 0-12 3-16 8"/><path d="M12 10c0 14 5 24 14 24s14-10 14-24l-7 7-7-11-7 11z" fill="#F6D5CB"/></svg><svg class="doodle doodle--b" width="60" height="60" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="28" fill="#1F4FA3" stroke="#0E1B3D" stroke-width="1.6"/><circle cx="30" cy="30" r="20" fill="#FFFFFF" stroke="#0E1B3D" stroke-width="1.2"/><circle cx="30" cy="30" r="13" fill="#3AA8B8" stroke="#0E1B3D" stroke-width="1.2"/><circle cx="30" cy="30" r="6.5" fill="#0E1B3D"/></svg>
     <h1><em>Merhaba!</em> I’m Elifnaz, a Media Informatics student.</h1>
     <p class="lead">I design interfaces and prototypes in Figma and produce media: <strong>writing, editing, sound and camera</strong>. Currently studying Medieninformatik at LMU Munich, focused on UX design, HCI and interface prototyping.</p>
   </div>
@@ -363,6 +365,7 @@ footer p{max-width:52ch;margin:16px auto 0;color:var(--ink-2)}
 
 <footer id="contact">
   <div class="wrap">
+    <svg class="nazar" width="44" height="44" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="28" fill="#1F4FA3" stroke="#0E1B3D" stroke-width="1.6"/><circle cx="30" cy="30" r="20" fill="#FFFFFF" stroke="#0E1B3D" stroke-width="1.2"/><circle cx="30" cy="30" r="13" fill="#3AA8B8" stroke="#0E1B3D" stroke-width="1.2"/><circle cx="30" cy="30" r="6.5" fill="#0E1B3D"/></svg>
     <span class="eyebrow">Konuşalım</span>
     <h2 style="margin-top:18px">Let’s talk.</h2>
     <p>Open to Werkstudent and internship roles in UI/UX, product design, and media production across Munich.</p>
