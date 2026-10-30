@@ -14,7 +14,6 @@ A single-page portfolio with a soft pastel look: pill navigation, outlined cards
 - **3 Days Later** — a short thriller produced end-to-end with a 5-person team: writing, cast, editing, sound, and the full visual identity (posters, promo site, TikTok teaser)
 - **SynchroTrack** — a mood-based "sonic focus" app concept, designed in Figma
 - **CENTRA** — a dashboard concept for MVG/SWM staff, developed in the UX3 (Concept Development) course on Intelligent Urban Systems
-- **Save Button** — a component states exercise (default, hover, pressed, saved) built with design-system consistency in mind
 
 ## Built with
 
